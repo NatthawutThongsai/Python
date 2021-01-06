@@ -13,5 +13,14 @@ del l #remove from memory
 l2.clear() #delete the member of list
 l = [i for i in range(3)]
 l2 = l.copy()
-l3 = ["a","b","c"]
-print(l2+l3)
+
+li1 = ["a","b","c"]
+li2 = ["x","y","z"]
+for j,k in zip(li1,li2):
+    print(j+k)
+l.sort()
+l.reverse()
+l2.extend(li2)
+print(l2)
+print(l2[::-1])
+print(l)
