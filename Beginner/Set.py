@@ -27,7 +27,22 @@ s2 = {3,4,5}
 sa = s1.union(s2)
 s3.update(s2)
 print(sa)
+del sa
 #difference
 sa = s1.difference(s2)
 print(sa)
+del sa
+s1.difference_update(s2)
+print(s1)
+s1 = {1,2,3}
 #intersection
+sa = s1.intersection(s2)
+print(sa)
+del sa
+#subset & superset
+s1 = {1,2,3}
+s2 = {1,3}
+print("{1,3} is subset {1,2,3} -> ",s2.issubset(s1))
+print("{1,3} is superset {1,2,3} -> ",s2.issuperset(s1))
+#min & max
+print("min & max ",min(s1),max(s2))
