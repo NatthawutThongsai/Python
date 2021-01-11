@@ -46,3 +46,6 @@ print("{1,3} is subset {1,2,3} -> ",s2.issubset(s1))
 print("{1,3} is superset {1,2,3} -> ",s2.issuperset(s1))
 #min & max
 print("min & max ",min(s1),max(s2))
+#frozen set => cannot add or delete member
+s = frozenset([1,2,3])
+
