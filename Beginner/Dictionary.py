@@ -11,3 +11,10 @@ colors["red"] = "แดง"
 colors.update({"blue":"สีน้ำเงิน"})
 colors["purple"] = "สีม่วง"
 print(colors)
+for k,v in colors.items():
+    print("key = ",k ,"value = ",v)
+colors.pop("red")
+x = colors.copy()
+colors.popitem() #delete latest member
+colors.clear() #clear all member
+del colors #clear colors from memory
