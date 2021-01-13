@@ -18,3 +18,19 @@ x = colors.copy()
 colors.popitem() #delete latest member
 colors.clear() #clear all member
 del colors #clear colors from memory
+#nested dictionary
+market= {
+    "xxx":{
+        "name":"xx",
+        "menu":["x1","x2"]
+    },
+    "yyy":{
+        "name":"yy",
+        "menu":["y1","y2"]
+    },
+    "zzz":{
+        "name":"zz",
+        "menu":["z1","z2"]
+    }
+}
+print(market["xxx"]["menu"][0])
