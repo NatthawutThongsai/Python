@@ -38,3 +38,8 @@ def factorial(number):
         return 1
     return factorial(number-1) * number
 print(factorial(5))
+#lambda function
+s=lambda name:name
+sum= lambda x,y: x+y
+print(s("xxx"))
+print(sum(5,10))
