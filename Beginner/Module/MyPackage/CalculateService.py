@@ -7,3 +7,5 @@ def addition(*args):
     for item in args:
         total+=item
     print("Summation = ",total)
+def power(num1,m):
+    print(num1**m)
